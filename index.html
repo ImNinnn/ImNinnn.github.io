@@ -1,26 +1,139 @@
 <!DOCTYPE html>
-<html>
-<head><title>ToS and Privacy Policy</title></head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Terms of Service & Privacy Policy</title>
+    <style>
+        :root {
+            --bg-color: #1e1f22;
+            --card-bg: #2b2d31;
+            --text-color: #dbdee1;
+            --text-muted: #949ba4;
+            --accent-color: #8f6666;
+            --heading-color: #f2f3f5;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            max-width: 700px;
+            width: 100%;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        header h1 {
+            color: var(--heading-color);
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        h2 {
+            color: var(--accent-color);
+            margin-top: 0;
+            border-bottom: 1px solid #3f4147;
+            padding-bottom: 10px;
+            font-size: 1.5rem;
+        }
+
+        h3 {
+            color: var(--heading-color);
+            font-size: 1.1rem;
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+
+        p, ul {
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        footer {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-top: 40px;
+        }
+    </style>
+</head>
 <body>
-    <h1>Terms of Service</h1>
-    <p>By adding this discord bot to your server, you automatically agree to these terms:
-You are not allowed to use this discord bot to exploit glitches, raid servers or break the discord ToS
-And that’s pretty much it
-</p>
-    <h1>Privacy Policy</h1>
-    <p>What data do we collect?
-We store user IDs, server IDs, and Channel IDs that gets saves to .json files to ensure that the bot can work through restarts.
-We also cache message data for a maximum of Two hours.
 
-How do we use this data?
-IDs are used to maintain leaderboards, the board feature, Saving Economy and Level Data and blacklist guilds that doesn’t follow our ToS
-Cashed messaged are used for Boards, Ghost ping notifications and the /deleted, /edited commands
+<div class="container">
 
-Who do we share the data with?
-No one, only I (ImNinnn) has access to any data, I also cannot see message contents.
+    <header>
+        <h1>Legal Documentation</h1>
+        <p>Simple, honest, and transparent legal agreements for our Discord application.</p>
+    </header>
 
-How do I remove my data?
-If you want your data removed, Join the support server and ask in the data removal channel
-</p>
+    <div class="card">
+        <h2>Terms of Service</h2>
+        <p>By adding this application to your server, you automatically agree to the following conditions:</p>
+        <ul>
+            <li>You will not use this application to exploit glitches or bugs.</li>
+            <li>You will not use this application to orchestrate or assist in server raids.</li>
+            <li>You must strictly follow the official <strong>Discord Terms of Service</strong> while interacting with this app.</li>
+        </ul>
+        <p>That is all! Play fair and enjoy the features.</p>
+    </div>
+
+    <div class="card">
+        <h2>Privacy Policy</h2>
+
+        <h3>1. What data do we collect?</h3>
+        <p>We collect and store basic Discord identifiers including <strong>User IDs</strong>, <strong>Server IDs</strong>, and <strong>Channel IDs</strong>. This data is securely written to localized json files to preserve configuration settings through bot reboots.</p>
+        <p>Additionally, transient message data is cached in temporary memory for a maximum duration of <strong>two hours</strong> before being permanently dropped.</p>
+
+        <h3>2. How do we use this data?</h3>
+        <ul>
+            <li><strong>Identifiers (IDs):</strong> Utilized to keep track of global economy balances, level statistics, server leaderboards, board features, and to restrict access to guilds violating our Terms of Service.</li>
+            <li><strong>Cached Messages:</strong> Utilized strictly to power automated features like ghost-ping detection alerts, board updates, and the <code>/deleted</code> or <code>/edited</code> utilities.</li>
+        </ul>
+
+        <h3>3. Who do we share data with?</h3>
+        <p><strong>Absolutely nobody.</strong> Data access is exclusively limited to the primary developer (<em>ImNinnn</em>). Under normal operating conditions, live message content cannot be manually monitored or viewed.</p>
+
+        <h3>4. How do I request data removal?</h3>
+        <p>If you want all records pertaining to your profile deleted, simply join our official support server and drop a message in our designated data-removal channel.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 ImNinnn. All rights reserved.</p>
+    </footer>
+
+</div>
+
 </body>
 </html>
